@@ -1,5 +1,16 @@
 const Discord = require('discord.js')
-const prefix = '!'
+
+// Select prefix based on STAGING_BUILD environment variable
+
+const staging_flag = ("STAGING_BUILD" in process.env)
+
+console.info( staging_flag ? 
+    "STAGING Build, using \\ command prefix" :
+    "Production Build, using ! command prefix"
+    )
+
+const prefix = staging_flag ? '\\' : '\!'
+
 const commands = {
     matic: require('../commands/matic'),
     eth: require('../commands/eth'),
