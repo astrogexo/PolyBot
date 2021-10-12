@@ -6,7 +6,7 @@ module.exports = async message => {
     message.reply({
         embed: {
             title: 'Tower',
-            thumbnail: { url: 'https://app.towerfinance.io/static/media/tower-dark.a4c250a5.png' },
+            thumbnail: { url: 'https://cdn.discordapp.com/icons/873564402819948544/c579dbb997c9103d82acb3849c7f43f8.png' },
             fields:[{
                 name: "Price",
                 value: `**$${price}**`
