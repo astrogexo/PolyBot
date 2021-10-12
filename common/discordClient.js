@@ -30,7 +30,8 @@ const commands = {
     tx: require('../commands/tx'),
     ftm: require('../commands/ftm'),
     repl: require('../commands/repl'),
-    block: require('../commands/block')
+    block: require('../commands/block'),
+    tower: require('../commands/tower'),
 }
 
 const client = new Discord.Client()
