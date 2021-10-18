@@ -44,7 +44,8 @@ const commands = {
     bct: require('../commands/bct'),
 }
 
-const client = new Discord.Client()
+const client = new Discord.Client({ shards: "auto" })
+
 
 client.on('message', function (message) {
     if (message.author.bot) return
