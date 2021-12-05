@@ -45,6 +45,7 @@ const commands = {
     beans: require('../commands/beans'),
     kafe: require('../commands/kafe'),
     arome: require('../commands/arome'),
+    rome: require('../commands/rome'),
 }
 
 const client = new Discord.Client()
