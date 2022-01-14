@@ -22,7 +22,7 @@ async function Msg(message, FullList) {
     }
 
     listedCoin = CoinGeckoList.data.find(
-        each => each.symbol === coin || each.id === coin || each.name === coin,
+        each => each.id === coin
     )
 
     if (!listedCoin) {
