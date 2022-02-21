@@ -60,6 +60,9 @@ const commands = {
     kafe: require('../commands/kafe'),
     arome: require('../commands/arome'),
     rome: require('../commands/rome'),
+    joe: require('../commands/joe'),
+    sno: require('../commands/sno'),
+    snoshare: require('../commands/snoshare'),
 }
 
 const client = new Discord.Client()
